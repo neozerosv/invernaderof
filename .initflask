@@ -1,0 +1,4 @@
+#Inicializacion de variables para que se ejecute flask
+export FLASK_APP=piinvernadero
+export FLASK_ENV=development
+export FLASK_DEBUG=true

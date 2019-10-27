@@ -50,7 +50,7 @@ El sistema deberá tener:
 
 ![Captura de grafica](https://github.com/neozerosv/invernadero-pi/raw/develop/images/invernadero-pi-grafica-bruto.png)
 
-Este software utiliza la plantilla base que explican en https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world 
+Este software utiliza la plantilla base que explican en https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world y basado en el trabajo previo en https://github.com/neozerosv/invernadero-pi
 
 
 
