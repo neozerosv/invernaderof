@@ -6,6 +6,9 @@ from flask_login import LoginManager
 import logging
 from logging.handlers import RotatingFileHandler
 import os
+from flask_babel import Babel
+from flask import request
+
 
 piinvernadero = Flask(__name__)
 piinvernadero.config.from_object(Config)
@@ -13,9 +16,16 @@ db = SQLAlchemy(piinvernadero)
 migrate = Migrate(piinvernadero, db)
 login = LoginManager(piinvernadero)
 login.login_view = 'login'
+babel = Babel(piinvernadero)
 
 from piinvernadero import routes, models, errors
 
+
+
+@babel.localeselector
+def get_locale():
+    #return request.accept_languages.best_match(piinvernadero.config['LANGUAGES'])
+    return 'es'
 
 if not piinvernadero.debug:
     if piinvernadero.config['MAIL_SERVER']:

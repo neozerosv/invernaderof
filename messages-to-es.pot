@@ -1,0 +1,133 @@
+# Translations template for PROJECT.
+# Copyright (C) 2019 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2019-10-26 23:19-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: piinvernadero/formsEdita.py:11 piinvernadero/forms.py:17
+#: piinvernadero/forms.py:35
+msgid "Username"
+msgstr "Usuario"
+
+#: piinvernadero/forms.py:12 piinvernadero/forms.py:19
+msgid "Password"
+msgstr "Clave"
+
+#: piinvernadero/forms.py:13
+msgid "Remember Me"
+msgstr "Recuérdame"
+
+#: piinvernadero/forms.py:14 piinvernadero/routes.py:38
+msgid "Sign In"
+msgstr "Ingresar"
+
+#: piinvernadero/forms.py:18
+msgid "Email"
+msgstr "Email"
+
+#: piinvernadero/forms.py:21
+msgid "Repeat Password"
+msgstr "Repetir clave"
+
+#: piinvernadero/forms.py:22 piinvernadero/routes.py:57
+msgid "Register"
+msgstr "Registrarse"
+
+#: piinvernadero/forms.py:27 piinvernadero/forms.py:47
+msgid "Please use a different username."
+msgstr "Por favor utilice un nombre de usuario diferente"
+
+#: piinvernadero/forms.py:32
+msgid "Please use a different email address."
+msgstr "Por favor utilice un email diferente"
+
+#: piinvernadero/forms.py:36
+msgid "About me"
+msgstr "Acerca de mí"
+
+#: piinvernadero/forms.py:37
+msgid "Submit"
+msgstr "Enviar"
+
+#: piinvernadero/routes.py:21
+msgid "Home Page"
+msgstr "Página Principal"
+
+#: piinvernadero/routes.py:31
+msgid "Invalid username or password"
+msgstr "Clave o nombre de usuario inválido"
+
+#: piinvernadero/routes.py:55
+msgid "Congratulations, you are now a registered user!"
+msgstr "Felicidades, ahora ya es un usuario registrado"
+
+#: piinvernadero/routes.py:79
+msgid "Your changes have been saved."
+msgstr "Tus cambios han sido guardados"
+
+#: piinvernadero/routes.py:84
+msgid "Edit Profile"
+msgstr "Editar perfil"
+
+#: piinvernadero/routes.py:84 piinvernadero/templates/user/edit_profile.html:4
+msgid "Edit Profile"
+msgstr "Editar Perfil"
+
+#: piinvernadero/templates/base.html:12
+msgid "Home"
+msgstr "Inicio"
+
+#: piinvernadero/templates/base.html:14
+msgid "Login"
+msgstr "Login"
+
+#: piinvernadero/templates/base.html:16
+msgid "Profile"
+msgstr "Pérfil"
+
+#: piinvernadero/templates/base.html:17
+msgid "Logout"
+msgstr "Logout"
+
+#: piinvernadero/templates/index.html:4
+msgid "Index"
+msgstr "Índice"
+
+#: piinvernadero/templates/error/404.html:4
+msgid "File Not Found"
+msgstr "Archivo no encontrado"
+
+#: piinvernadero/templates/error/404.html:5
+#: piinvernadero/templates/error/500.html:6
+msgid "Back"
+msgstr "Regresar"
+
+#: piinvernadero/templates/error/500.html:4
+msgid "An unexpected error has occurred"
+msgstr "Ha ocurrido un error inesperado"
+
+#: piinvernadero/templates/error/500.html:5
+msgid "The administrator has been notified. Sorry for the inconvenience!"
+msgstr "El administrador ha sido notificado. Sentimos el inconveniente."
+
+#: piinvernadero/templates/user/user.html:7
+msgid "User"
+msgstr "Usuario"
+
+#: piinvernadero/templates/user/user.html:12
+msgid "Last seen on"
+msgstr "Visto por última vez"
+

@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Primera paginas</h1>
+    <h1>{{_('Index')}}</h1>
     {% for post in posts %}
     <div><p>{{ post.mensaje }}</p></div>
     {% endfor %}
