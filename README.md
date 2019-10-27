@@ -5,6 +5,7 @@ Este es un proyecto que utiliza python flask, sqlite3 y highcharts para poder vi
 
 ```
  apt install python3 python3-pip python3-flask python3-flask-flatpages sqlite3 git 
+ python3-flaskext.wtf python3-apscheduler python3-flask-migrate python3-fpython3-flask-restful python3-flask-sqlalchemy python3-sqlalchemy python3-sqlalchemy-ext python3-flask-babel
  apt install python3-spidev python3-rpi.gpio  # Estos paquetes se deben instalar en la raspi
  git clone https://github.com/neozerosv/invernaderof
  cd invernadero-pi
@@ -16,7 +17,7 @@ Este es un proyecto que utiliza python flask, sqlite3 y highcharts para poder vi
 ```
 Para ejecutarlo en un ambiente virtual y que se pueda ver en la red local
 ```
- apt install python3 python3-pip python3-flask python3-flask-flatpages sqlite3 git 
+ python3-flaskext.wtf python3-apscheduler python3-flask-migrate python3-fpython3-flask-restful python3-flask-sqlalchemy python3-sqlalchemy python3-sqlalchemy-ext python3-flask-babel
  apt install python3 python-sqlite sqlite3 git python3-venv
  apt install python3-spidev python3-rpi.gpio  # Estos paquetes se deben instalar en la raspi
  git clone https://github.com/neozerosv/invernaderof
