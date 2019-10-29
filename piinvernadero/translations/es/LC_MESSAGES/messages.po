@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-10-27 13:29-0500\n"
+"POT-Creation-Date: 2019-10-28 18:45-0600\n"
 "PO-Revision-Date: 2019-10-26 23:40-0500\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -18,117 +18,130 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-#: piinvernadero/__init__.py:21
+#: piinvernadero/__init__.py:19
 msgid "Please log in to access this page."
 msgstr "Por favor ingrese para acceder a esta página"
 
-#: piinvernadero/forms.py:11 piinvernadero/forms.py:17
-#: piinvernadero/forms.py:35
-msgid "Username"
-msgstr "Usuario"
-
-#: piinvernadero/forms.py:11 piinvernadero/forms.py:17
-#: piinvernadero/forms.py:35
-msgid "Username is required"
-msgstr "El nombre de usuario es un campo requerido"
-
-#: piinvernadero/forms.py:12 piinvernadero/forms.py:19
-msgid "Password"
-msgstr "Clave"
-
-#: piinvernadero/forms.py:12 piinvernadero/forms.py:19
-msgid "Password is required"
-msgstr "La clave es un campo requerido"
-
-#: piinvernadero/forms.py:13
-msgid "Remember Me"
-msgstr "Recuérdame"
-
-#: piinvernadero/forms.py:14 piinvernadero/routes.py:39
-#: piinvernadero/templates/user/login.html:4
-msgid "Sign In"
-msgstr "Ingresar"
-
-#: piinvernadero/forms.py:18
-msgid "Email"
-msgstr "Email"
-
-#: piinvernadero/forms.py:18
-msgid "Email is required"
-msgstr "El Email es un campo requerido"
-
-#: piinvernadero/forms.py:21
-msgid "Repeat Password"
-msgstr "Repetir clave"
-
-#: piinvernadero/forms.py:21
-msgid "Password confirmation is required"
-msgstr "La confirmación de la clave es un campo requerida"
-
-#: piinvernadero/forms.py:21
-msgid "Passwords must match"
-msgstr "Las claves deben de coincidir"
-
-#: piinvernadero/forms.py:22 piinvernadero/routes.py:58
-#: piinvernadero/templates/user/register.html:4
-msgid "Register"
-msgstr "Registrarse"
-
-#: piinvernadero/forms.py:27 piinvernadero/forms.py:47
-msgid "Please use a different username."
-msgstr "Por favor utilice un nombre de usuario diferente"
-
-#: piinvernadero/forms.py:32
-msgid "Please use a different email address."
-msgstr "Por favor utilice un email diferente"
-
-#: piinvernadero/forms.py:36
-msgid "About me"
-msgstr "Acerca de mí"
-
-#: piinvernadero/forms.py:37
-msgid "Submit"
-msgstr "Enviar"
-
-#: piinvernadero/routes.py:22
+#: piinvernadero/main/routes.py:19 piinvernadero/routes.py:22
 msgid "Home Page"
 msgstr "Página Principal"
 
-#: piinvernadero/routes.py:32
-msgid "Invalid username or password"
-msgstr "Clave o nombre de usuario inválido"
-
-#: piinvernadero/routes.py:56
-msgid "Congratulations, you are now a registered user!"
-msgstr "Felicidades, ahora ya es un usuario registrado"
-
-#: piinvernadero/routes.py:80
+#: piinvernadero/main/routes.py:42 piinvernadero/routes.py:45
 msgid "Your changes have been saved."
 msgstr "Tus cambios han sido guardados"
 
-#: piinvernadero/routes.py:85 piinvernadero/templates/user/edit_profile.html:4
+#: piinvernadero/main/routes.py:47 piinvernadero/routes.py:50
+#: piinvernadero/templates/user/edit_profile.html:5
 msgid "Edit Profile"
 msgstr "Editar perfil"
 
-#: piinvernadero/templates/base.html:12
+#: piinvernadero/auth/forms.py:8 piinvernadero/auth/forms.py:14
+#: piinvernadero/main/forms.py:10
+msgid "Username"
+msgstr "Usuario"
+
+#: piinvernadero/auth/forms.py:8 piinvernadero/auth/forms.py:14
+#: piinvernadero/main/forms.py:10
+msgid "Username is required"
+msgstr "El nombre de usuario es un campo requerido"
+
+#: piinvernadero/auth/forms.py:9 piinvernadero/auth/forms.py:16
+msgid "Password"
+msgstr "Clave"
+
+#: piinvernadero/auth/forms.py:9 piinvernadero/auth/forms.py:16
+msgid "Password is required"
+msgstr "La clave es un campo requerido"
+
+#: piinvernadero/auth/forms.py:10
+msgid "Remember Me"
+msgstr "Recuérdame"
+
+#: piinvernadero/auth/forms.py:11 piinvernadero/auth/routes.py:28
+#: piinvernadero/templates/auth/login.html:5
+msgid "Sign In"
+msgstr "Ingresar"
+
+#: piinvernadero/auth/forms.py:15
+msgid "Email"
+msgstr "Email"
+
+#: piinvernadero/auth/forms.py:15
+msgid "Email is required"
+msgstr "El Email es un campo requerido"
+
+#: piinvernadero/auth/forms.py:18
+msgid "Repeat Password"
+msgstr "Repetir clave"
+
+#: piinvernadero/auth/forms.py:18
+msgid "Password confirmation is required"
+msgstr "La confirmación de la clave es un campo requerida"
+
+#: piinvernadero/auth/forms.py:18
+msgid "Passwords must match"
+msgstr "Las claves deben de coincidir"
+
+#: piinvernadero/auth/forms.py:19 piinvernadero/auth/routes.py:47
+#: piinvernadero/templates/auth/register.html:5
+msgid "Register"
+msgstr "Registrarse"
+
+#: piinvernadero/auth/forms.py:24 piinvernadero/main/forms.py:22
+msgid "Please use a different username."
+msgstr "Por favor utilice un nombre de usuario diferente"
+
+#: piinvernadero/auth/forms.py:29
+msgid "Please use a different email address."
+msgstr "Por favor utilice un email diferente"
+
+#: piinvernadero/auth/routes.py:21
+msgid "Invalid username or password"
+msgstr "Clave o nombre de usuario inválido"
+
+#: piinvernadero/auth/routes.py:45
+msgid "Congratulations, you are now a registered user!"
+msgstr "Felicidades, ahora ya es un usuario registrado"
+
+#: piinvernadero/main/forms.py:11
+msgid "About me"
+msgstr "Acerca de mí"
+
+#: piinvernadero/main/forms.py:12
+msgid "Submit"
+msgstr "Enviar"
+
+#: piinvernadero/templates/base.html:3
+msgid "Welcoe to Invernalio"
+msgstr "Bienvenido a Invernalio"
+
+#: piinvernadero/templates/base.html:20
 msgid "Home"
 msgstr "Inicio"
 
-#: piinvernadero/templates/base.html:14
+#: piinvernadero/templates/base.html:24
 msgid "Login"
 msgstr "Login"
 
-#: piinvernadero/templates/base.html:16
+#: piinvernadero/templates/base.html:26
 msgid "Profile"
 msgstr "Pérfil"
 
-#: piinvernadero/templates/base.html:17
+#: piinvernadero/templates/base.html:27
 msgid "Logout"
 msgstr "Logout"
 
 #: piinvernadero/templates/index.html:4
 msgid "Index"
 msgstr "Índice"
+
+#: piinvernadero/templates/auth/login.html:12
+msgid "New User?"
+msgstr "Nuevo Usuario?"
+
+#: piinvernadero/templates/auth/login.html:12
+msgid "Click to Register!"
+msgstr "Haga clic para registrarse!"
 
 #: piinvernadero/templates/error/404.html:4
 msgid "File Not Found"
@@ -147,19 +160,15 @@ msgstr "Ha ocurrido un error inesperado"
 msgid "The administrator has been notified. Sorry for the inconvenience!"
 msgstr "El administrador ha sido notificado. Sentimos el inconveniente."
 
-#: piinvernadero/templates/user/login.html:23
-msgid "New User?"
-msgstr "Nuevo Usuario?"
-
-#: piinvernadero/templates/user/login.html:23
-msgid "Click to Register!"
-msgstr "Haga clic para registrarse!"
-
-#: piinvernadero/templates/user/user.html:7
+#: piinvernadero/templates/user/user.html:8
 msgid "User"
 msgstr "Usuario"
 
-#: piinvernadero/templates/user/user.html:12
+#: piinvernadero/templates/user/user.html:10
+msgid "Edit your profile"
+msgstr "Editar perfíl"
+
+#: piinvernadero/templates/user/user.html:13
 msgid "Last seen on"
 msgstr "Visto por última vez"
 
