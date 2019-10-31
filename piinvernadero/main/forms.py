@@ -9,6 +9,9 @@ from piinvernadero.models import User
 class EditProfileForm(FlaskForm):
     username = StringField(_l('Username'), validators=[DataRequired(_l("Username is required"))])
     about_me = TextAreaField(_l('About me'), validators=[Length(min=0, max=140)])
+    first_name=StringField(_l('First Name'), validators=[DataRequired(_l("First name is required"))])
+    last_name=StringField(_l('First Name'), validators=[DataRequired(_l("Last name is required"))])
+    
     submit = SubmitField(_l('Submit'))
 
     def __init__(self, original_username, *args, **kwargs):

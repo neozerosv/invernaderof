@@ -10,8 +10,14 @@ class User(UserMixin, db.Model):
     username = db.Column(db.String(64), index=True, unique=True)
     email = db.Column(db.String(120), index=True, unique=True)
     password_hash = db.Column(db.String(128))
+    # User fields
+    active = db.Column(db.Boolean())
+    first_name = db.Column(db.String(50), nullable=False)
+    last_name = db.Column(db.String(50), nullable=False)
     about_me = db.Column(db.String(140))
     last_seen = db.Column(db.DateTime, default=datetime.utcnow)
+    role_id = db.Column(db.Integer, db.ForeignKey('role.id'))
+    #Relations
     posts = db.relationship('Post', backref='author', lazy='dynamic')
     
     def __repr__(self):
@@ -22,7 +28,18 @@ class User(UserMixin, db.Model):
 
     def check_password(self, password):
         return check_password_hash(self.password_hash, password)
-    
+
+class Role(db.Model):
+    id = db.Column(db.Integer(), primary_key=True)
+    name = db.Column(db.String(50), unique=True)
+    description = db.Column(db.String(200))
+    #Relations
+    users = db.relationship('User', backref='role', lazy='dynamic')
+
+    def __repr__(self):
+        return '<Role {}>'.format(self.name)  
+
+
     
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)

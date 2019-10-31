@@ -43,6 +43,9 @@ def create_app(config_class=Config):
     from piinvernadero.auth import bp as auth_bp
     piinvernadero.register_blueprint(auth_bp, url_prefix='/auth')
 
+    from piinvernadero.role import bp as role_bp
+    piinvernadero.register_blueprint(role_bp, url_prefix='/role')
+
     from piinvernadero.main import bp as main_bp
     piinvernadero.register_blueprint(main_bp)
 

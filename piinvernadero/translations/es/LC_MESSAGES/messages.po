@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-10-28 18:45-0600\n"
+"POT-Creation-Date: 2019-10-30 11:39-0600\n"
 "PO-Revision-Date: 2019-10-26 23:40-0500\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -45,11 +45,11 @@ msgstr "Usuario"
 msgid "Username is required"
 msgstr "El nombre de usuario es un campo requerido"
 
-#: piinvernadero/auth/forms.py:9 piinvernadero/auth/forms.py:16
+#: piinvernadero/auth/forms.py:9 piinvernadero/auth/forms.py:22
 msgid "Password"
 msgstr "Clave"
 
-#: piinvernadero/auth/forms.py:9 piinvernadero/auth/forms.py:16
+#: piinvernadero/auth/forms.py:9 piinvernadero/auth/forms.py:22
 msgid "Password is required"
 msgstr "La clave es un campo requerido"
 
@@ -70,28 +70,52 @@ msgstr "Email"
 msgid "Email is required"
 msgstr "El Email es un campo requerido"
 
+#: piinvernadero/auth/forms.py:16
+msgid "Active"
+msgstr "Activo"
+
+#: piinvernadero/auth/forms.py:17 piinvernadero/auth/forms.py:18
+msgid "First Name"
+msgstr "Nombres"
+
+#: piinvernadero/auth/forms.py:17
+msgid "First name is required"
+msgstr "Apellidos"
+
 #: piinvernadero/auth/forms.py:18
+msgid "Last name is required"
+msgstr "Los apellidos son requeridos"
+
+#: piinvernadero/auth/forms.py:19 piinvernadero/main/forms.py:11
+msgid "About me"
+msgstr "Acerca de mí"
+
+#: piinvernadero/auth/forms.py:20
+msgid "Role ID"
+msgstr "ID del Rol"
+
+#: piinvernadero/auth/forms.py:24
 msgid "Repeat Password"
 msgstr "Repetir clave"
 
-#: piinvernadero/auth/forms.py:18
+#: piinvernadero/auth/forms.py:24
 msgid "Password confirmation is required"
 msgstr "La confirmación de la clave es un campo requerida"
 
-#: piinvernadero/auth/forms.py:18
+#: piinvernadero/auth/forms.py:24
 msgid "Passwords must match"
 msgstr "Las claves deben de coincidir"
 
-#: piinvernadero/auth/forms.py:19 piinvernadero/auth/routes.py:47
+#: piinvernadero/auth/forms.py:25 piinvernadero/auth/routes.py:48
 #: piinvernadero/templates/auth/register.html:5
 msgid "Register"
 msgstr "Registrarse"
 
-#: piinvernadero/auth/forms.py:24 piinvernadero/main/forms.py:22
+#: piinvernadero/auth/forms.py:30 piinvernadero/main/forms.py:22
 msgid "Please use a different username."
 msgstr "Por favor utilice un nombre de usuario diferente"
 
-#: piinvernadero/auth/forms.py:29
+#: piinvernadero/auth/forms.py:35
 msgid "Please use a different email address."
 msgstr "Por favor utilice un email diferente"
 
@@ -99,20 +123,40 @@ msgstr "Por favor utilice un email diferente"
 msgid "Invalid username or password"
 msgstr "Clave o nombre de usuario inválido"
 
-#: piinvernadero/auth/routes.py:45
+#: piinvernadero/auth/routes.py:46
 msgid "Congratulations, you are now a registered user!"
 msgstr "Felicidades, ahora ya es un usuario registrado"
-
-#: piinvernadero/main/forms.py:11
-msgid "About me"
-msgstr "Acerca de mí"
 
 #: piinvernadero/main/forms.py:12
 msgid "Submit"
 msgstr "Enviar"
 
+#: piinvernadero/role/forms.py:8
+msgid "Name"
+msgstr "Nombre"
+
+#: piinvernadero/role/forms.py:8
+msgid "Name is required"
+msgstr "El nombre es obligatorio"
+
+#: piinvernadero/role/forms.py:9
+msgid "Description"
+msgstr "Descripción"
+
+#: piinvernadero/role/forms.py:10
+msgid "Add"
+msgstr "Agregar"
+
+#: piinvernadero/role/forms.py:15
+msgid "Please use a different role name."
+msgstr "Por favor utilice un nombre diferente."
+
+#: piinvernadero/role/routes.py:23 piinvernadero/templates/role/create.html:5
+msgid "Create"
+msgstr "Crear"
+
 #: piinvernadero/templates/base.html:3
-msgid "Welcoe to Invernalio"
+msgid "Welcome to Invernalio"
 msgstr "Bienvenido a Invernalio"
 
 #: piinvernadero/templates/base.html:20
@@ -171,4 +215,10 @@ msgstr "Editar perfíl"
 #: piinvernadero/templates/user/user.html:13
 msgid "Last seen on"
 msgstr "Visto por última vez"
+
+#~ msgid "Welcoe to Invernalio"
+#~ msgstr "Bienvenido a Invernalio"
+
+#~ msgid "Role created!"
+#~ msgstr "Rol creado!!"
 

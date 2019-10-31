@@ -38,10 +38,15 @@ def edit_profile():
     if form.validate_on_submit():
         current_user.username = form.username.data
         current_user.about_me = form.about_me.data
+        current_user.first_name = form.first_name.data
+        current_user.last_name = form.last_name.data        
         db.session.commit()
         flash(_('Your changes have been saved.'))
         return redirect(url_for('main.edit_profile'))
     elif request.method == 'GET':
         form.username.data = current_user.username
         form.about_me.data = current_user.about_me
+        form.first_name.data = current_user.first_name
+        form.last_name.data = current_user.last_name
+
     return render_template('user/edit_profile.html', title=_('Edit Profile'), form=form)

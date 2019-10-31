@@ -6,7 +6,7 @@ from piinvernadero import db
 from piinvernadero.auth import bp
 from piinvernadero.auth.forms import LoginForm, RegistrationForm
 #    ResetPasswordRequestForm, ResetPasswordForm
-from piinvernadero.models import User
+from piinvernadero.models import User,Role
 #from piinvernadero.auth.email import send_password_reset_email
 
 
@@ -34,11 +34,14 @@ def logout():
 
 @bp.route('/register', methods=['GET', 'POST'])
 def register():
+        
     if current_user.is_authenticated:
         return redirect(url_for('main.index'))
     form = RegistrationForm()
+    form.role_id.choices=[(g.id, g.name) for g in Role.query.all()]
     if form.validate_on_submit():
-        user = User(username=form.username.data, email=form.email.data)
+        user = User(username=form.username.data, email=form.email.data,active=True,\
+            first_name=form.first_name.data,last_name=form.last_name.data,role_id=1)
         user.set_password(form.password.data)
         db.session.add(user)
         db.session.commit()

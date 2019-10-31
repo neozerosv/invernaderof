@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-10-28 18:45-0600\n"
+"POT-Creation-Date: 2019-10-30 11:39-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,11 +44,11 @@ msgstr ""
 msgid "Username is required"
 msgstr ""
 
-#: piinvernadero/auth/forms.py:9 piinvernadero/auth/forms.py:16
+#: piinvernadero/auth/forms.py:9 piinvernadero/auth/forms.py:22
 msgid "Password"
 msgstr ""
 
-#: piinvernadero/auth/forms.py:9 piinvernadero/auth/forms.py:16
+#: piinvernadero/auth/forms.py:9 piinvernadero/auth/forms.py:22
 msgid "Password is required"
 msgstr ""
 
@@ -69,28 +69,52 @@ msgstr ""
 msgid "Email is required"
 msgstr ""
 
+#: piinvernadero/auth/forms.py:16
+msgid "Active"
+msgstr ""
+
+#: piinvernadero/auth/forms.py:17 piinvernadero/auth/forms.py:18
+msgid "First Name"
+msgstr ""
+
+#: piinvernadero/auth/forms.py:17
+msgid "First name is required"
+msgstr ""
+
 #: piinvernadero/auth/forms.py:18
+msgid "Last name is required"
+msgstr ""
+
+#: piinvernadero/auth/forms.py:19 piinvernadero/main/forms.py:11
+msgid "About me"
+msgstr ""
+
+#: piinvernadero/auth/forms.py:20
+msgid "Role ID"
+msgstr ""
+
+#: piinvernadero/auth/forms.py:24
 msgid "Repeat Password"
 msgstr ""
 
-#: piinvernadero/auth/forms.py:18
+#: piinvernadero/auth/forms.py:24
 msgid "Password confirmation is required"
 msgstr ""
 
-#: piinvernadero/auth/forms.py:18
+#: piinvernadero/auth/forms.py:24
 msgid "Passwords must match"
 msgstr ""
 
-#: piinvernadero/auth/forms.py:19 piinvernadero/auth/routes.py:47
+#: piinvernadero/auth/forms.py:25 piinvernadero/auth/routes.py:48
 #: piinvernadero/templates/auth/register.html:5
 msgid "Register"
 msgstr ""
 
-#: piinvernadero/auth/forms.py:24 piinvernadero/main/forms.py:22
+#: piinvernadero/auth/forms.py:30 piinvernadero/main/forms.py:22
 msgid "Please use a different username."
 msgstr ""
 
-#: piinvernadero/auth/forms.py:29
+#: piinvernadero/auth/forms.py:35
 msgid "Please use a different email address."
 msgstr ""
 
@@ -98,20 +122,40 @@ msgstr ""
 msgid "Invalid username or password"
 msgstr ""
 
-#: piinvernadero/auth/routes.py:45
+#: piinvernadero/auth/routes.py:46
 msgid "Congratulations, you are now a registered user!"
-msgstr ""
-
-#: piinvernadero/main/forms.py:11
-msgid "About me"
 msgstr ""
 
 #: piinvernadero/main/forms.py:12
 msgid "Submit"
 msgstr ""
 
+#: piinvernadero/role/forms.py:8
+msgid "Name"
+msgstr ""
+
+#: piinvernadero/role/forms.py:8
+msgid "Name is required"
+msgstr ""
+
+#: piinvernadero/role/forms.py:9
+msgid "Description"
+msgstr ""
+
+#: piinvernadero/role/forms.py:10
+msgid "Add"
+msgstr ""
+
+#: piinvernadero/role/forms.py:15
+msgid "Please use a different role name."
+msgstr ""
+
+#: piinvernadero/role/routes.py:23 piinvernadero/templates/role/create.html:5
+msgid "Create"
+msgstr ""
+
 #: piinvernadero/templates/base.html:3
-msgid "Bienvenido a Invernalio"
+msgid "Welcome to Invernalio"
 msgstr ""
 
 #: piinvernadero/templates/base.html:20
